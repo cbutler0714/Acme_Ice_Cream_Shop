@@ -8,7 +8,7 @@ const client = new pg.Client(
   process.env.DATABASE_URL || "postgres://localhost/acme_icecreamshop_db"
 );
 
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 3000;
 
 app.get("/api/flavors", async (req, res, next) => {
   try {
